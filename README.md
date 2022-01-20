@@ -1,5 +1,7 @@
 # Shopify-Backend-Developer-Intern-Challenge-Summer-2022
 
+I have implemented CRUD operations along with filtering on the following fields :'_id', 'name', 'description', 'stockCount', 'salesPrice', 'costPrice', 'taxRate', 'minCount', 'createdAt', 'updatedAt', 'category'.
+
 Installation Guide
 1. Download the code from the github repository.
 3. On the root folder, run "npm i" in the terminal (to install the dependencies).
@@ -45,3 +47,7 @@ curl --location --request PUT 'http://localhost:3000/inventory/<id>' \
 
 To delete an item:
 curl --location --request DELETE 'http://localhost:3000/inventory/<id>'
+    
+To filter the items:
+curl --location --request GET 'http://localhost:3000/inventory?name=Mandarin&stockCount=90' \
+--data-raw ''
